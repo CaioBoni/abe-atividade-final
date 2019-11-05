@@ -9,5 +9,12 @@
 
 
 ## Docker commands
-1. **API Loja** 		    -> *docker run -p 8080:8080 app-loja .*
-2. **API Fonecedor** 		-> *docker run -p 9090:9090 app-fornecedor .*
+
+1. **API Loja** 		    
+  -> *cd /loja*
+  -> *docker build -f DockerFile -t app-loja .*
+  -> *docker run -p 8080:8080 app-loja .*
+2. **API Fonecedor** 	
+  -> *cd /fornecedor*
+  -> *docker build -f DockerFile -t app-fornecedor .*
+  -> *docker run -p 9090:9090 app-fornecedor .*
